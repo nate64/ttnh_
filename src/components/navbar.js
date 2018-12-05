@@ -1,8 +1,9 @@
 import React, { Component }  from 'react'
 import { Menu } from 'semantic-ui-react'
-import { Link, withRouter } from 'react-router-dom'
+import { Link, withRouter, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import smallLogo from '../images/ttnh_logo_small.png'
+
 
 class Navbar extends React.Component {
   render () {
@@ -12,6 +13,11 @@ class Navbar extends React.Component {
           <Link to='/'>
             <Logo src={smallLogo} />
           </Link>
+          <NavLink to='./about'>
+            <Menu.Item>
+              <p>About Us</p>
+            </Menu.Item>
+          </NavLink>
           <Menu.Item
             name='logo'
             >Logo Here
@@ -32,12 +38,14 @@ class Navbar extends React.Component {
 
 const Background = styled.div `
   background: grey;
+  flex-direction: row;
 `
 
 const Logo = styled.img`
   height: 55px;
   margin-left: 10px;
   margin-right: 25px;
+  margin-top: 10px;
 `;
 
 export default withRouter((Navbar));
