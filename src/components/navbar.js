@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import smallLogo from '../images/ttnh_logo_small.png'
 
 
-class Navbar extends React.Component {
+class Navbar extends Component {
   render () {
     return (
       <div>
@@ -37,15 +37,17 @@ class Navbar extends React.Component {
 }
 
 const Background = styled.div `
-  background: grey;
+  background: #98CC8A;
+  display: flex;
   flex-direction: row;
 `
 
 const Logo = styled.img`
-  height: 55px;
+  height: 200px;
   margin-left: 10px;
   margin-right: 25px;
   margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 export default withRouter((Navbar));
