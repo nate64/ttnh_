@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-
 import '../styles/App.css';
 
 import Navbar from './navbar'
 import Home from './home'
+import About from './about'
 
 
 class App extends Component {
@@ -14,6 +14,7 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/about' component={About}/>
         </Switch>
 
       </div>

@@ -10,26 +10,31 @@ class Navbar extends Component {
     return (
       <div>
         <Menu.Menu as={Background} fixed='top'>
-          <Link to='/'>
-            <Logo src={smallLogo} />
-          </Link>
-          <NavLink to='./about'>
+
+          <NavLink to='/'>
             <Menu.Item>
-              <p>About Us</p>
+              <Logo src={smallLogo} />
             </Menu.Item>
           </NavLink>
-          <Menu.Item
-            name='logo'
-            >Logo Here
-          </Menu.Item>
-          <Menu.Item
-            name='link1'
-            >Link 1
-          </Menu.Item>
-          <Menu.Item
-            name='link2'
-            >Link 2
+        
+          <NavLink to='./about'>
+            <Menu.Item name='about'>
+              About
             </Menu.Item>
+          </NavLink>
+
+          <NavLink to='./someplace'>
+            <Menu.Item name='link1'>
+              Link 1
+            </Menu.Item>
+          </NavLink>
+        
+          <NavLink to='./someplaceelse'>
+            <Menu.Item name='link2'>
+              Link 2
+            </Menu.Item>
+          </NavLink>
+        
         </Menu.Menu>
       </div>
     )
@@ -40,6 +45,9 @@ const Background = styled.div `
   background: #98CC8A;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  font-size: 50px;
+  space-between: 30px;
 `
 
 const Logo = styled.img`
@@ -48,6 +56,6 @@ const Logo = styled.img`
   margin-right: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
-`;
+`
 
 export default withRouter((Navbar));
