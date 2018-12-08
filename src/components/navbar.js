@@ -1,6 +1,6 @@
 import React, { Component }  from 'react'
-import { Menu } from 'semantic-ui-react'
-import { Link, withRouter, NavLink } from 'react-router-dom'
+import { Menu, Header } from 'semantic-ui-react'
+import { withRouter, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import smallLogo from '../images/ttnh_logo_small.png'
 
@@ -34,6 +34,8 @@ class Navbar extends Component {
               Link 2
             </Menu.Item>
           </NavLink>
+
+          <Header>Header Test</Header>
         
         </Menu.Menu>
       </div>

@@ -1,46 +1,55 @@
 import React,  { Component, Fragment } from 'react'
 import styled from 'styled-components'
-import { Container, Segment, Image, Hero } from 'semantic-ui-react';
+import { Container, Segment, Image, Hero, Button} from 'semantic-ui-react';
+import { Link } from 'react-router-dom'
 import Toshastore from '../images/Tosha_store.jpg'
-// import Homehero from './hero'
-
+import Sign from '../images/sign.jpg'
 
 class Home extends Component {
   render() {
     return (
       <Container>
-        {/* <Homehero>
-          <Segment basic>
-          </Segment>
-        </Homehero> */}
-        <Image src={Toshastore} fluid>
-
+      
+        <Link to='./about'>
+          <Button>
+            Come Check Us Out!
+          </Button>
+        </Link>
+      
+        <Image src={Toshastore}>
         </Image>
-      </Container>
 
+        <Image src={Sign}>
+        </Image>
       
+
+
+        <Container>
+          <Segment>
+            <Homehero>
+            </Homehero>
+          </Segment>
+        </Container>
       
+      </Container>
     )
   }
 }
 
 const Homehero = styled.div`
-  margin-top: 100px;
-  // padding: 100px;
-  background-image: url(${Toshastore});
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url(${Sign});  
   background-size: cover;
-`
-
-const HomeImage = styled.image`
-
 `
 
 
 
 export default Home
 
-
-
-{/* <Homehero imgSrc={Toshastore}/> */}
+// const Homehero = styled.div`
+//   margin-top: 100px;
+//   // padding: 100px;
+//   background-image: url(${Toshastore});
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// `

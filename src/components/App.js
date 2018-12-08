@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import '../styles/App.css';
+import React, { Component, Fragment } from 'react';
+import { Switch, Route, } from 'react-router-dom';
 
 import Navbar from './navbar'
 import Home from './home'
 import About from './about'
-
+import NoMatch from './nomatch'
 
 class App extends Component {
   render() {
@@ -13,10 +12,10 @@ class App extends Component {
       <div>
         <Navbar />
         <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/about' component={About}/>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/about' component={About}/>
+            <Route component={NoMatch} />
         </Switch>
-
       </div>
     );
   }
