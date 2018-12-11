@@ -3,6 +3,7 @@ import { Menu, Header } from 'semantic-ui-react'
 import { withRouter, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import smallLogo from '../images/ttnh_logo_small.png'
+import Sign from '../images/sign.jpg'
 
 
 class Navbar extends Component {
@@ -44,7 +45,8 @@ class Navbar extends Component {
 }
 
 const Background = styled.div `
-  background: #98CC8A;
+  // background: #98CC8A;
+  background-image: url(${Sign});  
   display: flex;
   flex-direction: row;
   align-items: center;
