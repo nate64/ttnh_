@@ -11,9 +11,9 @@ class Home extends Component {
       <Container>
       
         <Link to='./about'>
-          <Button>
+          <SButton>
             Come Check Us Out!
-          </Button>
+          </SButton>
         </Link>
       
         <Image src={Toshastore}>
@@ -41,7 +41,23 @@ const Homehero = styled.div`
   background-size: cover;
 `
 
+const SButton = styled.button`
+  background: ${ props => props.cancel ? "grey" : "#f79233" };
+  padding: ${props => props.logout ? "12px 67px" : "18px 25px"};
+  color: white;
+  font-size: 20px;
+  font-family: 'Balthazar', serif !important;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
 
+  &:hover {
+    background: #c7762a;
+  }
+  &:focus {
+    outline: 0;
+  }
+`;
 
 export default Home
 
