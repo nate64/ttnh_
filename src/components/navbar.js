@@ -7,7 +7,7 @@ import Sign from '../images/sign.jpg'
 
 
 class Navbar extends Component {
-  render () {
+  render() {
     return (
       <div>
         <Menu.Menu as={Background} fixed='top'>
