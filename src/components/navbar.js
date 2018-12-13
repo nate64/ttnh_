@@ -10,7 +10,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <Menu.Menu as={Background} fixed='top'>
+        <Menu.Menu as={Background} fixed='top' position='right'>
 
           <NavLink to='/'>
             <Menu.Item>

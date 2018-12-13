@@ -30,6 +30,9 @@ class Home extends Component {
             </Homehero>
           </Segment>
         </Container>
+        <Container>
+          
+        </Container>
       
       </Container>
     )
