@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Container } from 'semantic-ui-react'
+import { Menu, Grid } from 'semantic-ui-react'
 import { withRouter, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -9,10 +9,9 @@ class Footer extends Component {
   render() {
     return(
       <div>
-        <Menu.Menu position='right'>
-          
+        <Menu.Menu as={Footerbody} >
           <NavLink to='/'>
-            <Menu.Item name='home' position='right'>
+            <Menu.Item name='home'>
               Home
             </Menu.Item>
           </NavLink>
@@ -22,15 +21,10 @@ class Footer extends Component {
               About
             </Menu.Item>
           </NavLink>
-
-          
-            <Menu.Item href="https://www.codeshoppe.io">
-              Powered By CodeShoppe Studios
-            </Menu.Item>
-
-          </Menu.Menu>   
-        
-
+        </Menu.Menu>   
+        <Menu.Item as={Subfooter} href="https://www.codeshoppe.io">
+          Powered By CodeShoppe Studios
+        </Menu.Item>
       </div>
     )
   }
@@ -39,15 +33,15 @@ class Footer extends Component {
 const Footerbody = styled.div `
   background: #98CC8A; //#FDF162
   font-size: 20px;
-  space-between: 50px;
-
+  justify-content: space-evenly;
   display: flex;
-  flex-direction: row;
-  align-items: right;
 `
 
 const Subfooter = styled(Menu.Item)`
   background: #FDF162;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
 `
 
 
