@@ -10,7 +10,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <Menu.Menu as={Background} fixed='top' position='right'>
+        <Menu.Menu as={Background} fixed='top' >
 
           <NavLink to='/'>
             <Menu.Item>
@@ -18,25 +18,23 @@ class Navbar extends Component {
             </Menu.Item>
           </NavLink>
         
+          <NavLink to='./products'>
+            <Menu.Item name='products'>
+              Products
+            </Menu.Item>
+          </NavLink>
+
           <NavLink to='./about'>
             <Menu.Item name='about'>
               About
             </Menu.Item>
           </NavLink>
 
-          <NavLink to='./someplace'>
-            <Menu.Item name='link1'>
-              Link 1
+          <NavLink to='./contact'>
+            <Menu.Item name='contact'>
+              Contact Us
             </Menu.Item>
           </NavLink>
-        
-          <NavLink to='./someplaceelse'>
-            <Menu.Item name='link2'>
-              Link 2
-            </Menu.Item>
-          </NavLink>
-
-          <Header>Header Test</Header>
         
         </Menu.Menu>
       </div>

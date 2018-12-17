@@ -8,8 +8,8 @@ import Sign from '../images/sign.jpg'
 class Home extends Component {
   render() {
     return (
-      <Container>
-      
+      <Container fluid>
+
         <Link to='./about'>
           <SButton>
             Come Check Us Out!
