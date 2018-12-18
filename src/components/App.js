@@ -5,7 +5,7 @@ import Navbar from './navbar'
 import Home from './home'
 import About from './about'
 import Products from './Products'
-import Contact from './Contact'
+import Contact from './contact'
 import NoMatch from './nomatch'
 import Footer from './footer';
 

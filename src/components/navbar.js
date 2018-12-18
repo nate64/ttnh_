@@ -32,7 +32,7 @@ class Navbar extends Component {
 
           <NavLink to='./contact'>
             <Menu.Item name='contact'>
-              Contact Us
+              Contact
             </Menu.Item>
           </NavLink>
         

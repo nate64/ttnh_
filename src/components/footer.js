@@ -15,12 +15,22 @@ class Footer extends Component {
               Home
             </Menu.Item>
           </NavLink>
-
+          <NavLink to='./products'>
+            <Menu.Item name='products'>
+              Products
+            </Menu.Item>
+          </NavLink>
           <NavLink to='./about'>
             <Menu.Item name='about'>
               About
             </Menu.Item>
           </NavLink>
+          <NavLink to='./contact'>
+            <Menu.Item name='contact'>
+              Contact
+            </Menu.Item>
+          </NavLink>
+          
         </Menu.Menu>   
         <Menu.Item as={Subfooter} href="https://www.codeshoppe.io">
           Powered By CodeShoppe Studios
@@ -35,6 +45,7 @@ const Footerbody = styled.div `
   font-size: 20px;
   justify-content: space-evenly;
   display: flex;
+  padding: 50px;
 `
 
 const Subfooter = styled(Menu.Item)`
