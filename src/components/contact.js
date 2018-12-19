@@ -58,11 +58,7 @@ const LeftContainer = styled.div`
   background-image: url(${Barn});
   background-size: cover;
   background-repeat: no-repeat;
-  
   text-align: center;
-  
-  
-  
 `
 
 const RightContainer = styled.div`
@@ -70,7 +66,6 @@ const RightContainer = styled.div`
   background-image: url(${Map});
   background-size: cover;
   background-repeat: no-repeat;
-  
   text-align: center;
 `
 
