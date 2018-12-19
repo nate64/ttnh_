@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Menu, Grid } from 'semantic-ui-react'
-import { withRouter, NavLink } from 'react-router-dom'
+import { Menu, Grid, } from 'semantic-ui-react'
+import { withRouter, NavLink, Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 import Sign from '../images/sign.jpg'
@@ -54,6 +54,5 @@ const Subfooter = styled(Menu.Item)`
   justify-content: center;
   display: flex;
 `
-
 
 export default withRouter((Footer));

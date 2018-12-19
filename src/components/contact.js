@@ -6,7 +6,7 @@ import { Container, Grid, Segment } from 'semantic-ui-react'
 import Barn from '../images/barn.jpg'
 import Map from '../images/maps_screenshot.png'
 
-const contactgridcentered = () => (
+const contactgrid = () => (
   <Grid divided='vertically'>
     <Grid.Row columns={2}>
 
@@ -69,7 +69,7 @@ const RightContainer = styled.div`
   text-align: center;
 `
 
-export default contactgridcentered
+export default contactgrid
 
 
 // class Products extends Component {
